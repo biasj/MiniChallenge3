@@ -55,6 +55,12 @@ class LaunchpadViewController: UIViewController {
     
     @IBAction func btnMenu(_ sender: Any) {
         print("Menu Button")
+        //performSegue(withIdentifier: "Menu", sender: self)
+        let modalView = UIStoryboard(name: "Menu", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController") as UIViewController
+        modalView.modalPresentationStyle = UIModalPresentationStyle.custom
+        modalView.transitioningDelegate = self
+        
+        self.present(modalView, animated: true)
     }
     @IBAction func btnNotes(_ sender: Any) {
         print("Notes Button")
@@ -293,5 +299,30 @@ extension LaunchpadViewController: ButtonCellDelegate {
         }
     }
     
+}
+
+extension LaunchpadViewController: UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return HalfSizePresentantionController(presentedViewController: presented, presenting: presentedViewController)
+    }
+}
+
+//class HalfSizePresentantionController: UIPresentationController {
+//    func frameOfPresentedViewInContainerView() -> CGRect {
+//        return CGRect(x: 0, y: containerView!.bounds.height/2, width: containerView!.bounds.width, height: containerView!.bounds.height/2)
+//    }
+//}
+
+class HalfSizePresentantionController: UIPresentationController {
+    override var frameOfPresentedViewInContainerView: CGRect {
+        get {
+            guard let view = containerView else {
+                return CGRect.zero
+            }
+            
+            
+            return CGRect(x: 0, y: view.bounds.height/2.8, width: view.bounds.width, height: view.bounds.height)
+        }
+    }
 }
 

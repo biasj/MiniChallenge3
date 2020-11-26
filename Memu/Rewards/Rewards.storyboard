@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wqY-Wh-Wjv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wqY-Wh-Wjv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -525,15 +526,49 @@
                                     <constraint firstItem="rc7-xm-QZG" firstAttribute="top" secondItem="Y5G-NH-G8g" secondAttribute="top" constant="-8" id="tyR-iT-4Dc"/>
                                 </constraints>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfw-ye-wqt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.40000000000000002" green="0.42745098040000001" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Recompensas" id="Ob1-DB-l8W">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="Moc-Hv-WAR">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="emO-TC-FAU">
+                                                <rect key="frame" x="369" y="10" width="25" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.40046492220000002" green="0.42675316330000002" blue="0.47059440609999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="x.circle.fill" catalog="system" symbolScale="large"/>
+                                                </state>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXl-5X-Cyf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="CoW-pt-3EJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WYv-Bz-S6A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ZXl-5X-Cyf" firstAttribute="top" secondItem="tfw-ye-wqt" secondAttribute="bottom" id="5NU-F8-MMs"/>
+                            <constraint firstItem="tfw-ye-wqt" firstAttribute="leading" secondItem="9nu-Js-QRl" secondAttribute="leading" id="99j-Ae-Igc"/>
+                            <constraint firstAttribute="trailing" secondItem="tfw-ye-wqt" secondAttribute="trailing" id="CBg-MP-q8f"/>
+                            <constraint firstItem="tfw-ye-wqt" firstAttribute="top" secondItem="9nu-Js-QRl" secondAttribute="top" id="eEu-2m-zuf"/>
                             <constraint firstItem="Y5G-NH-G8g" firstAttribute="top" secondItem="WYv-Bz-S6A" secondAttribute="top" id="fYb-RT-g68"/>
                             <constraint firstItem="rc7-xm-QZG" firstAttribute="width" secondItem="9nu-Js-QRl" secondAttribute="width" id="k4T-Dx-tCT"/>
                             <constraint firstItem="Y5G-NH-G8g" firstAttribute="leading" secondItem="WYv-Bz-S6A" secondAttribute="leading" id="lXR-UF-JHM"/>
                             <constraint firstItem="WYv-Bz-S6A" firstAttribute="trailing" secondItem="Y5G-NH-G8g" secondAttribute="trailing" id="rT7-bc-DBh"/>
+                            <constraint firstItem="ZXl-5X-Cyf" firstAttribute="leading" secondItem="9nu-Js-QRl" secondAttribute="leading" id="skX-qz-xCk"/>
                             <constraint firstItem="WYv-Bz-S6A" firstAttribute="bottom" secondItem="Y5G-NH-G8g" secondAttribute="bottom" id="xF8-Kv-UYA"/>
+                            <constraint firstAttribute="trailing" secondItem="ZXl-5X-Cyf" secondAttribute="trailing" id="zLI-qh-gN2"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1430"/>
@@ -590,6 +625,7 @@
         <image name="inicianteG" width="457.17001342773438" height="442.30999755859375"/>
         <image name="obterRecompensa" width="621.6300048828125" height="133.44000244140625"/>
         <image name="progressoPadrao" width="360.17999267578125" height="368.16000366210938"/>
+        <image name="x.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

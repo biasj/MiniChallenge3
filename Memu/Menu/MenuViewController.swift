@@ -35,7 +35,7 @@ class MenuViewController: UIViewController {
     
     func alert(_ segue: String, _ msg: String) {
         let warning = "Todo progresso atual será perdido."
-        let alert = UIAlertController(title: msg, message: warning, preferredStyle: .alert)
+        let alert = UIAlertController(title: nil, message: warning, preferredStyle: .actionSheet)
         let cancel = UIAlertAction(title: "Cancelar", style: .default, handler: nil)
         let confirm = UIAlertAction(title: "Confirmar", style: .destructive) { (UIAlertAction) in
 //            if segue == "homeScreen" {
@@ -44,8 +44,8 @@ class MenuViewController: UIViewController {
                 self.performSegue(withIdentifier: segue, sender: self)
 //            }
         }
-        alert.addAction(cancel)
         alert.addAction(confirm)
+        alert.addAction(cancel)
         self.present(alert, animated: true, completion: nil)
     }
     

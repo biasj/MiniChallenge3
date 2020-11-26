@@ -25,7 +25,6 @@
                                 <state key="normal" title="Menu" image="menu"/>
                                 <connections>
                                     <action selector="btnMenu:" destination="8gh-7E-tSa" eventType="touchUpInside" id="MDE-8i-CbX"/>
-                                    <segue destination="29j-VX-wZk" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="yba-lp-Qra"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTA-pw-zyP">
@@ -168,6 +167,7 @@
                         <outlet property="btnCheck" destination="noR-Ku-2iL" id="9Ji-GV-lr1"/>
                         <outlet property="collectionView" destination="NcY-Kg-mxs" id="wTP-7w-RZM"/>
                         <segue destination="h4S-Xx-DZ9" kind="presentation" identifier="go2Puzzle" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="z7Z-Wm-FuI"/>
+                        <segue destination="29j-VX-wZk" kind="custom" identifier="Menu" id="vbg-3r-oeR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTq-fo-21N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

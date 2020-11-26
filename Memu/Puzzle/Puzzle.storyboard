@@ -25,7 +25,7 @@
                                 <state key="normal" title="Menu" image="menu"/>
                                 <connections>
                                     <action selector="btnMenu:" destination="NIZ-Ik-7oU" eventType="touchUpInside" id="mgD-Mb-Xrr"/>
-                                    <segue destination="0PX-9p-qiY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Ssh-BF-Qmx"/>
+                                    <segue destination="0PX-9p-qiY" kind="presentation" id="Ssh-BF-Qmx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wek-Cb-Lqq">

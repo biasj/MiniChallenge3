@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="EXz-0I-xLe">
-                                <rect key="frame" x="133.5" y="68" width="147" height="35"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="EXz-0I-xLe">
+                                <rect key="frame" x="133" y="88" width="148" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="vab-KM-UkQ"/>
                                 </constraints>
@@ -31,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Wav-XQ-c9t">
-                                <rect key="frame" x="36" y="120" width="342" height="259"/>
+                                <rect key="frame" x="36" y="133" width="342" height="259"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Wav-XQ-c9t" secondAttribute="height" multiplier="342:259" id="yxK-mI-KkL"/>
                                 </constraints>
@@ -58,19 +59,19 @@ A seguir, entenda como funciona:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locked" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ARt-2K-gty" userLabel="imgRandom">
-                                <rect key="frame" x="52" y="387" width="49" height="52"/>
+                                <rect key="frame" x="52" y="400" width="49" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ARt-2K-gty" secondAttribute="height" multiplier="49:52" id="PKv-a4-6OH"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fnf-fb-XcG" userLabel="imgPickNotes">
-                                <rect key="frame" x="52" y="466" width="49" height="52"/>
+                                <rect key="frame" x="52" y="479" width="49" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Fnf-fb-XcG" secondAttribute="height" multiplier="49:52" id="F4n-am-IXV"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possibilita alterar as notas disponíveis" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QuF-ps-81x">
-                                <rect key="frame" x="126" y="466" width="236.5" height="52"/>
+                                <rect key="frame" x="126" y="479" width="236.5" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QuF-ps-81x" secondAttribute="height" multiplier="59:13" id="doj-WR-D5A"/>
                                 </constraints>
@@ -79,13 +80,13 @@ A seguir, entenda como funciona:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oo7-L0-apu" userLabel="imgPlayStop">
-                                <rect key="frame" x="52" y="544" width="49" height="51.5"/>
+                                <rect key="frame" x="52" y="557" width="49" height="51.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oo7-L0-apu" secondAttribute="height" multiplier="49:51" id="oYD-zU-YXy"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dá play/stop na melodia gerada" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZAa-Cw-7o7">
-                                <rect key="frame" x="126" y="541" width="236.5" height="54.5"/>
+                                <rect key="frame" x="126" y="554" width="236.5" height="54.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZAa-Cw-7o7" secondAttribute="height" multiplier="118:27" id="wIk-oH-lOP"/>
                                 </constraints>
@@ -94,7 +95,7 @@ A seguir, entenda como funciona:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-i4-bzG">
-                                <rect key="frame" x="126" y="387" width="236.5" height="52"/>
+                                <rect key="frame" x="126" y="400" width="236.5" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0qQ-i4-bzG" secondAttribute="height" multiplier="59:13" id="xem-lu-Asn"/>
                                 </constraints>
@@ -109,13 +110,12 @@ A seguir, entenda como funciona:</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zk-r6-Jpj">
-                                <rect key="frame" x="143" y="795" width="128" height="47"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zk-r6-Jpj">
+                                <rect key="frame" x="133" y="774" width="148" height="68"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="1Zk-r6-Jpj" secondAttribute="height" multiplier="77:47" constant="51.148936170212764" id="pg8-AC-Bty"/>
+                                    <constraint firstAttribute="width" secondItem="1Zk-r6-Jpj" secondAttribute="height" multiplier="37:17" priority="750" id="vLh-MW-beq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="30"/>
-                                <state key="normal" title="Jogar">
+                                <state key="normal" image="jogar">
                                     <color key="titleColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -123,13 +123,13 @@ A seguir, entenda como funciona:</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earOn" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HS0-hU-CHq" userLabel="imgEar">
-                                <rect key="frame" x="52" y="622" width="49" height="52"/>
+                                <rect key="frame" x="52" y="635" width="49" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HS0-hU-CHq" secondAttribute="height" multiplier="49:52" id="DFE-2A-wuv"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mostra a quantidade de ouvidas restantes" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dvW-Vb-Kbk">
-                                <rect key="frame" x="126" y="622" width="236.5" height="52"/>
+                                <rect key="frame" x="126" y="635" width="236.5" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dvW-Vb-Kbk" secondAttribute="height" multiplier="59:13" id="8I1-9n-7SV"/>
                                 </constraints>
@@ -137,10 +137,43 @@ A seguir, entenda como funciona:</string>
                                 <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YY-py-zww">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.40000000000000002" green="0.42745098040000001" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Ajuda" id="n26-9P-IGd">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="aS8-RY-thc">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vVv-eN-Zqp">
+                                                <rect key="frame" x="369" y="10" width="25" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.40046492220000002" green="0.42675316330000002" blue="0.47059440609999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="x.circle.fill" catalog="system" symbolScale="large"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="close:" destination="YbS-vD-RU7" eventType="touchUpInside" id="zrQ-YW-5Ga"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nX1-2u-rw7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="PFi-Ob-b57"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ujk-3F-9Mn"/>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="nX1-2u-rw7" firstAttribute="top" secondItem="EXz-0I-xLe" secondAttribute="top" id="5hP-BL-Q7C"/>
                             <constraint firstItem="dvW-Vb-Kbk" firstAttribute="top" secondItem="ZAa-Cw-7o7" secondAttribute="bottom" constant="26.5" id="8jF-ZG-aXA"/>
                             <constraint firstItem="0qQ-i4-bzG" firstAttribute="leading" secondItem="QuF-ps-81x" secondAttribute="leading" id="8yq-hE-ASb"/>
                             <constraint firstItem="Fnf-fb-XcG" firstAttribute="top" secondItem="ARt-2K-gty" secondAttribute="bottom" constant="27" id="92a-pX-0jM"/>
@@ -148,34 +181,44 @@ A seguir, entenda como funciona:</string>
                             <constraint firstItem="ARt-2K-gty" firstAttribute="trailing" secondItem="oo7-L0-apu" secondAttribute="trailing" id="Bj9-vp-1b5"/>
                             <constraint firstItem="ARt-2K-gty" firstAttribute="trailing" secondItem="Fnf-fb-XcG" secondAttribute="trailing" id="Ecv-wN-zfA"/>
                             <constraint firstItem="0qQ-i4-bzG" firstAttribute="leading" secondItem="ZAa-Cw-7o7" secondAttribute="leading" id="FBM-bO-esN"/>
+                            <constraint firstItem="EXz-0I-xLe" firstAttribute="leading" secondItem="1Zk-r6-Jpj" secondAttribute="leading" id="HlD-2H-Qoa"/>
+                            <constraint firstItem="9YY-py-zww" firstAttribute="centerX" secondItem="EXz-0I-xLe" secondAttribute="centerX" id="JS8-By-tzC"/>
                             <constraint firstItem="ujk-3F-9Mn" firstAttribute="trailing" secondItem="0qQ-i4-bzG" secondAttribute="trailing" constant="51.5" id="Jtv-49-0qa"/>
                             <constraint firstItem="ZAa-Cw-7o7" firstAttribute="top" secondItem="QuF-ps-81x" secondAttribute="bottom" constant="23" id="LqG-c2-Ngc"/>
                             <constraint firstItem="0qQ-i4-bzG" firstAttribute="trailing" secondItem="ZAa-Cw-7o7" secondAttribute="trailing" id="OSU-Go-4XD"/>
+                            <constraint firstItem="ujk-3F-9Mn" firstAttribute="bottom" secondItem="1Zk-r6-Jpj" secondAttribute="bottom" constant="20" id="Pwr-7h-KEf"/>
+                            <constraint firstItem="EXz-0I-xLe" firstAttribute="top" secondItem="9YY-py-zww" secondAttribute="bottom" id="Q9a-II-ubI"/>
                             <constraint firstItem="0qQ-i4-bzG" firstAttribute="trailing" secondItem="QuF-ps-81x" secondAttribute="trailing" id="RP0-Gb-G0s"/>
                             <constraint firstItem="Wav-XQ-c9t" firstAttribute="leading" secondItem="ujk-3F-9Mn" secondAttribute="leading" constant="36" id="UDy-We-gmi"/>
+                            <constraint firstItem="1Zk-r6-Jpj" firstAttribute="centerX" secondItem="yOS-eh-t73" secondAttribute="centerX" id="UkB-uk-NTj"/>
+                            <constraint firstItem="9YY-py-zww" firstAttribute="top" secondItem="ujk-3F-9Mn" secondAttribute="top" id="W21-nD-Qcb"/>
+                            <constraint firstItem="nX1-2u-rw7" firstAttribute="trailing" secondItem="ujk-3F-9Mn" secondAttribute="trailing" id="W8q-Ol-FpB"/>
                             <constraint firstItem="0qQ-i4-bzG" firstAttribute="leading" secondItem="ARt-2K-gty" secondAttribute="trailing" constant="25" id="X2n-xd-fLE"/>
-                            <constraint firstItem="EXz-0I-xLe" firstAttribute="top" secondItem="ujk-3F-9Mn" secondAttribute="top" constant="24" id="YzB-H0-Vd3"/>
                             <constraint firstItem="QuF-ps-81x" firstAttribute="top" secondItem="0qQ-i4-bzG" secondAttribute="bottom" constant="27" id="a6I-pj-kYz"/>
+                            <constraint firstItem="nX1-2u-rw7" firstAttribute="leading" secondItem="ujk-3F-9Mn" secondAttribute="leading" id="au5-cq-YqJ"/>
+                            <constraint firstItem="9YY-py-zww" firstAttribute="leading" secondItem="yOS-eh-t73" secondAttribute="leading" id="dAX-U3-Srh"/>
                             <constraint firstItem="0qQ-i4-bzG" firstAttribute="trailing" secondItem="dvW-Vb-Kbk" secondAttribute="trailing" id="fx8-GG-Usu"/>
                             <constraint firstItem="HS0-hU-CHq" firstAttribute="top" secondItem="oo7-L0-apu" secondAttribute="bottom" constant="26.5" id="heC-9L-7ug"/>
                             <constraint firstItem="EXz-0I-xLe" firstAttribute="centerX" secondItem="yOS-eh-t73" secondAttribute="centerX" id="lgr-2T-Bci"/>
-                            <constraint firstItem="1Zk-r6-Jpj" firstAttribute="bottom" secondItem="ujk-3F-9Mn" secondAttribute="bottom" constant="-20" id="mNE-tl-rPs"/>
                             <constraint firstItem="ARt-2K-gty" firstAttribute="top" secondItem="0qQ-i4-bzG" secondAttribute="top" id="mRa-eJ-b2R"/>
-                            <constraint firstItem="Wav-XQ-c9t" firstAttribute="top" secondItem="EXz-0I-xLe" secondAttribute="bottom" constant="17" id="oak-T9-tEc"/>
+                            <constraint firstItem="Wav-XQ-c9t" firstAttribute="top" secondItem="EXz-0I-xLe" secondAttribute="bottom" constant="10" id="oak-T9-tEc"/>
                             <constraint firstItem="ARt-2K-gty" firstAttribute="leading" secondItem="Fnf-fb-XcG" secondAttribute="leading" id="p5u-1G-Aew"/>
                             <constraint firstItem="ujk-3F-9Mn" firstAttribute="trailing" secondItem="Wav-XQ-c9t" secondAttribute="trailing" constant="36" id="pnL-H6-MWV"/>
                             <constraint firstItem="ARt-2K-gty" firstAttribute="bottom" secondItem="0qQ-i4-bzG" secondAttribute="bottom" id="r1b-kg-RAS"/>
                             <constraint firstItem="ARt-2K-gty" firstAttribute="trailing" secondItem="HS0-hU-CHq" secondAttribute="trailing" id="rED-gC-NX2"/>
                             <constraint firstItem="ARt-2K-gty" firstAttribute="leading" secondItem="HS0-hU-CHq" secondAttribute="leading" id="rln-k4-hXt"/>
                             <constraint firstItem="0qQ-i4-bzG" firstAttribute="leading" secondItem="dvW-Vb-Kbk" secondAttribute="leading" id="sxz-Yj-zeB"/>
-                            <constraint firstItem="1Zk-r6-Jpj" firstAttribute="centerX" secondItem="yOS-eh-t73" secondAttribute="centerX" id="vbz-2L-ITp"/>
+                            <constraint firstItem="1Zk-r6-Jpj" firstAttribute="leading" secondItem="ujk-3F-9Mn" secondAttribute="leading" constant="133" id="w2c-Dg-Emp"/>
                             <constraint firstItem="ARt-2K-gty" firstAttribute="leading" secondItem="oo7-L0-apu" secondAttribute="leading" id="xnn-NV-qEJ"/>
                             <constraint firstItem="oo7-L0-apu" firstAttribute="bottom" secondItem="ZAa-Cw-7o7" secondAttribute="bottom" id="yIf-9Y-HgN"/>
                             <constraint firstItem="ARt-2K-gty" firstAttribute="top" secondItem="Wav-XQ-c9t" secondAttribute="bottom" constant="8" symbolic="YES" id="zEx-7b-gPt"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnClose" destination="vVv-eN-Zqp" id="x2W-Mj-9Wz"/>
                         <outlet property="button" destination="1Zk-r6-Jpj" id="HVX-iv-Y9s"/>
+                        <outlet property="navBar" destination="9YY-py-zww" id="3Gq-hU-Cab"/>
+                        <outlet property="titleLabel" destination="EXz-0I-xLe" id="Kel-8B-bNH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPM-H4-75E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -185,8 +228,10 @@ A seguir, entenda como funciona:</string>
     </scenes>
     <resources>
         <image name="earOn" width="64.540000915527344" height="104.66000366210938"/>
+        <image name="jogar" width="262" height="115"/>
         <image name="locked" width="150" height="160"/>
         <image name="note" width="150" height="160"/>
         <image name="play" width="150.25" height="159.83999633789062"/>
+        <image name="x.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

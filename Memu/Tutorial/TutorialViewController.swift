@@ -10,14 +10,22 @@ import UIKit
 class TutorialViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var btnClose: UIButton!
+    @IBOutlet weak var navBar: UINavigationBar!
     
     let tutorialHasLaunched: Bool = UserDefaults.standard.bool(forKey: "tutorialHasLaunched")
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if tutorialHasLaunched {
-            button.setTitle("Continuar", for: .normal)
+        if tutorialHasLaunched == false {
+//            button.setTitle("Continuar", for: .normal)
+//            button.setImage(UIImage(named: "jogar"), for: .normal)
+            button.isHidden = false
+            titleLabel.isHidden = false
+            btnClose.isHidden = true
+            navBar.isHidden = true
         }
         //button.setAttributedTitle(NSAttributedString(string: "Continuar"), for: .normal)
     }
@@ -34,5 +42,9 @@ class TutorialViewController: UIViewController {
         } else {
             self.dismiss(animated: true, completion: nil)
         }
+    }
+    
+    @IBAction func close(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
